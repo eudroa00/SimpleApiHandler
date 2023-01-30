@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 
 
-public class SimpleApiRequest : MonoBehaviour
+public class ApiRequester : MonoBehaviour
 {
-    [ContextMenu("Test Get")]
-    public async void TestGet()
+    [ContextMenu("Get")]
+    public async void RequestSubmiter()
     {
         var url = "http://localhost:5000/api/contracts/showAll";
 
