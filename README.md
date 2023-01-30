@@ -8,4 +8,4 @@ The client is developed in Unity, a video game development software that makes i
 
 The app has multiple tabs where an user can access different kind of data, such as information about flights, passengers, or airport employees. The users must be able to filter that data. Therefore:
 
-The scripts in this respository are ment to take the GET request from the client and send them to an API that I have already developed.
+The scripts in this respository are ment to take the GET request from the client and send them to an API that I have already developed, then receive back the responses and let them be accessible from other scripts that manage the actual graphic interface.
