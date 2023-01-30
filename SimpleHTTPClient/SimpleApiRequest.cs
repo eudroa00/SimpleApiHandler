@@ -12,7 +12,7 @@ public class SimpleApiRequest : MonoBehaviour
     [ContextMenu("Test Get")]
     public async void TestGet()
     {
-        var url = "http://localhost:5000/api/bids/showAll";
+        var url = "http://localhost:5000/api/contracts/showAll";
 
         using var www = UnityWebRequest.Get(url); //Instantiate a Get Request and store it in www variable
         www.SetRequestHeader("Content-Type", "application/json");
@@ -29,7 +29,7 @@ public class SimpleApiRequest : MonoBehaviour
 
             try
             {
-                var result = JsonConvert.DeserializeObject<List<bidData>>(jsonResponse); // JSON to c#
+                var result = JsonConvert.DeserializeObject<List<contractData>>(jsonResponse); // JSON to c#
                 Debug.Log("Success.");
             }
             catch(Exception ex)
